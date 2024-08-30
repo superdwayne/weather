@@ -37,27 +37,27 @@
     // Map the weather condition to the SVG icon filename
     switch (weatherMain) {
       case 'clear':
-        return '/public/assets/all/clear-day.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg';
       case 'rain':
-        return '/public/assets/all/rain.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/rain.svg';
       case 'drizzle':
-        return '/public/assets/all/drizzle.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/drizzle.svg';
       case 'clouds':
-        return '/public/assets/all/cloudy.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/cloudy.svg';
       case 'thunderstorm':
-        return '/public/assets/all/thunderstorms.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms.svg';
       case 'snow':
-        return '/public/assets/all/snow.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg';
       case 'mist':
-        return '/public/assets/all/fog.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/fog.svg';
       case 'smoke':
-        return '/public/assets/all/smoke.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/smoke.svg';
       case 'haze':
-        return '/public/assets/all/haze.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/haze.svg';
       case 'dust':
-        return '/public/assets/all/dust.svg';
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/dust.svg';
       default:
-        return '/public/assets/all/not-available.svg'; // Generic icon for unknown cases
+        return 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/not-available.svg'; // Generic icon for unknown cases
     }
   }
 </script>
@@ -90,7 +90,7 @@
 
       <!-- Weather Icon Display -->
       <div class="weather-icon">
-        <img public={getWeatherIconPath()} alt="Weather Icon" />
+        <img src={getWeatherIconPath()} alt="Weather Icon" />
       </div>
     </div>
   {/if}
