@@ -37,27 +37,27 @@
     // Map the weather condition to the SVG icon filename
     switch (weatherMain) {
       case 'clear':
-        return '/src/assets/all/clear-day.svg';
+        return '/public/assets/all/clear-day.svg';
       case 'rain':
-        return '/src/assets/all/rain.svg';
+        return '/public/assets/all/rain.svg';
       case 'drizzle':
-        return '/src/assets/all/drizzle.svg';
+        return '/public/assets/all/drizzle.svg';
       case 'clouds':
-        return '/src/assets/all/cloudy.svg';
+        return '/public/assets/all/cloudy.svg';
       case 'thunderstorm':
-        return '/src/assets/all/thunderstorms.svg';
+        return '/public/assets/all/thunderstorms.svg';
       case 'snow':
-        return '/src/assets/all/snow.svg';
+        return '/public/assets/all/snow.svg';
       case 'mist':
-        return '/src/assets/all/fog.svg';
+        return '/public/assets/all/fog.svg';
       case 'smoke':
-        return '/src/assets/all/smoke.svg';
+        return '/public/assets/all/smoke.svg';
       case 'haze':
-        return '/src/assets/all/haze.svg';
+        return '/public/assets/all/haze.svg';
       case 'dust':
-        return '/src/assets/all/dust.svg';
+        return '/public/assets/all/dust.svg';
       default:
-        return '/src/assets/all/not-available.svg'; // Generic icon for unknown cases
+        return '/public/assets/all/not-available.svg'; // Generic icon for unknown cases
     }
   }
 </script>
@@ -90,7 +90,7 @@
 
       <!-- Weather Icon Display -->
       <div class="weather-icon">
-        <img src={getWeatherIconPath()} alt="Weather Icon" />
+        <img public={getWeatherIconPath()} alt="Weather Icon" />
       </div>
     </div>
   {/if}
